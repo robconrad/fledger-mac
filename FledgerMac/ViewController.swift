@@ -7,12 +7,17 @@
 //
 
 import Cocoa
+import FledgerCommon
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var label: NSTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        label.stringValue = Util.getNames()
+        
         // Do any additional setup after loading the view.
     }
 

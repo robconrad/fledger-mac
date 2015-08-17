@@ -14,6 +14,8 @@
 		3E3917721B77F7D700F72EC5 /* FledgerCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3917691B77F76100F72EC5 /* FledgerCommon.framework */; };
 		3E3917731B77F7D700F72EC5 /* FledgerCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3917691B77F76100F72EC5 /* FledgerCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3E39195D1B81448F00F72EC5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E39195C1B81448F00F72EC5 /* LoginViewController.swift */; };
+		3E3919661B81608E00F72EC5 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3919651B81608E00F72EC5 /* AppColors.swift */; };
+		3E39196E1B81616F00F72EC5 /* AppStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E39196D1B81616F00F72EC5 /* AppStyling.swift */; };
 		68D7A8E4F014BEFFE93D583C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B979BC744FE4FF097710913 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		3E39175F1B77F6F900F72EC5 /* FledgerMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FledgerMacTests.swift; sourceTree = "<group>"; };
 		3E3917691B77F76100F72EC5 /* FledgerCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FledgerCommon.framework; path = ../FledgerCommon/Build/Products/Debug/FledgerCommon.framework; sourceTree = "<group>"; };
 		3E39195C1B81448F00F72EC5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3E3919651B81608E00F72EC5 /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		3E39196D1B81616F00F72EC5 /* AppStyling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStyling.swift; sourceTree = "<group>"; };
 		5B979BC744FE4FF097710913 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD81F8D804C2B17B642CF47 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +113,7 @@
 		3E3917491B77F6F800F72EC5 /* FledgerMac */ = {
 			isa = PBXGroup;
 			children = (
+				3E3919641B81607F00F72EC5 /* ui */,
 				3E39195B1B81446A00F72EC5 /* controllers */,
 				3E39174C1B77F6F800F72EC5 /* AppDelegate.swift */,
 				3E3917501B77F6F800F72EC5 /* Images.xcassets */,
@@ -149,6 +154,15 @@
 				3E39195C1B81448F00F72EC5 /* LoginViewController.swift */,
 			);
 			name = controllers;
+			sourceTree = "<group>";
+		};
+		3E3919641B81607F00F72EC5 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				3E3919651B81608E00F72EC5 /* AppColors.swift */,
+				3E39196D1B81616F00F72EC5 /* AppStyling.swift */,
+			);
+			name = ui;
 			sourceTree = "<group>";
 		};
 		675CDEF9CC3AB904A538BA66 /* Pods */ = {
@@ -312,7 +326,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E3919661B81608E00F72EC5 /* AppColors.swift in Sources */,
 				3E39195D1B81448F00F72EC5 /* LoginViewController.swift in Sources */,
+				3E39196E1B81616F00F72EC5 /* AppStyling.swift in Sources */,
 				3E39174D1B77F6F800F72EC5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

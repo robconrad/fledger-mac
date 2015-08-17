@@ -54,11 +54,11 @@ extension LoginViewController: LoginViewHelperDataSource {
 extension LoginViewController: LoginViewHelperDelegate {
     
     func notifyEmailValidity(valid: Bool) {
-        emailLabel.textColor = valid ? NSColor.blackColor() : NSColor.redColor()
+        emailLabel.textColor = valid ? AppColors.text() : AppColors.textError()
     }
     
     func notifyPasswordValidity(valid: Bool) {
-        passwordLabel.textColor = valid ? NSColor.blackColor() : NSColor.redColor()
+        passwordLabel.textColor = valid ? AppColors.text() : AppColors.textError()
     }
     
     func notifyLoginResult(valid: Bool) {

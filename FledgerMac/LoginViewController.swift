@@ -16,17 +16,18 @@ class LoginViewController: NSViewController {
         return LoginViewHelper(self, self)
     }()
     
+    var loginHandler: ((Bool) -> ())?
+    
     @IBOutlet weak var email: NSTextField!
     @IBOutlet weak var emailLabel: NSTextField!
     @IBOutlet weak var password: NSSecureTextField!
     @IBOutlet weak var passwordLabel: NSTextField!
-    
-    @IBOutlet weak var status: NSTextField!
+    @IBOutlet weak var loginButton: NSButton!
     
     override func viewDidLoad() {
-        ServiceBootstrap.preRegister()
-        helper.loginFromCache()
         super.viewDidLoad()
+        helper.loginFromCache()
+        loginButton.keyEquivalent = "\r"
     }
     
     @IBAction func login(sender: AnyObject) {
@@ -64,7 +65,7 @@ extension LoginViewController: LoginViewHelperDelegate {
     func notifyLoginResult(valid: Bool) {
         notifyEmailValidity(valid)
         notifyPasswordValidity(valid)
-        status.stringValue = valid ? "success!" : "failure :("
+        loginHandler?(valid)
     }
     
 }

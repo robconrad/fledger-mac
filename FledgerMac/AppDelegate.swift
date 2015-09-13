@@ -47,23 +47,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
         }
         
-        window?.beginSheet(loginSheet, completionHandler: { (response) -> Void in
-            switch response {
-            case NSModalResponseStop:
-                println("we good?")
-            default:
-                println("oh nodes!")
-            }
-        })
+        window?.beginSheet(loginSheet, completionHandler: { (response) -> Void in })
         
     }
 
     @IBAction func logout(sender: AnyObject) {
-        
         ParseSvc().logout()
-        
         showLoginSheet()
-        
     }
     
 }

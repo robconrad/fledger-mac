@@ -465,7 +465,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="GKK-MZ-uNd" viewBased="YES" id="62Y-h8-Pe3" customClass="ItemsTableView" customModule="FledgerMac" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="238" height="117"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="775" height="0.0"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -695,7 +695,7 @@
                                                         </tableCellView>
                                                     </prototypeCellViews>
                                                 </tableColumn>
-                                                <tableColumn identifier="subtotalColumn" width="138.73954643121485" minWidth="10" maxWidth="3.4028234663852886e+38" id="gY6-A2-RAx">
+                                                <tableColumn identifier="subtotalColumn" width="144.73954643121485" minWidth="10" maxWidth="3.4028234663852886e+38" id="gY6-A2-RAx">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Subtotal">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>

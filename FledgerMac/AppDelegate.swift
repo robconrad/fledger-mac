@@ -63,4 +63,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         showLoginView()
     }
     
+    override func validateMenuItem(menuItem: NSMenuItem) -> Bool {
+        if let item = menuItem as? AppMenuItem {
+            return item.isValid()
+        }
+        return true
+    }
+    
 }

@@ -25,9 +25,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         if (ParseSvc().isLoggedIn()) {
             ServiceBootstrap.register()
+            showMainTabView()
         }
         else {
-            showLoginSheet()
+            showLoginView()
         }
         
     }
@@ -36,24 +37,30 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
     
-    func showLoginSheet() {
+    func showMainTabView() {
+        let mainTabController = storyboard?.instantiateControllerWithIdentifier("mainTabViewController") as! MainTabViewController
         
+        window?.contentViewController = mainTabController
+        window?.contentView = mainTabController.view
+    }
+    
+    func showLoginView() {
         let loginController = storyboard?.instantiateControllerWithIdentifier("loginViewController") as! LoginViewController
-        let loginSheet = NSPanel(contentViewController: loginController)
         
         loginController.loginHandler = { valid in
             if valid {
-                self.window?.endSheet(loginSheet, returnCode: NSModalResponseStop)
+                self.showMainTabView()
             }
         }
         
-        window?.beginSheet(loginSheet, completionHandler: { (response) -> Void in })
-        
+        window?.contentViewController = loginController
+        window?.contentView = loginController.view
+        window?.makeFirstResponder(loginController.email)
     }
 
     @IBAction func logout(sender: AnyObject) {
         ParseSvc().logout()
-        showLoginSheet()
+        showLoginView()
     }
     
 }

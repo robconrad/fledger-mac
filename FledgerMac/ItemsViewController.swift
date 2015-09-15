@@ -42,16 +42,14 @@ class ItemsViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        table.itemSumOperationFactory = { item, row, itemFilters in
-            self.dataQueue.addOperation(ItemSumOperation(item: item, controller: self, row: row, filters: itemFilters))
-        }
-     
-        if let filters = itemFilters {
-            table.itemFilters = filters
-        }
-        table.itemFilters.count = 30
-        table.itemFilters.offset = 0
+        let filters = itemFilters ?? ItemSvc().getFiltersFromDefaults()
+        filters.count = 30
+        filters.offset = 0
         
+        table.dataProvider = ItemsTableViewDataProvider(sumFactory: { item, row, itemFilters in
+            self.dataQueue.addOperation(ItemSumOperation(item: item, controller: self, row: row, filters: itemFilters))
+        }, filters: filters)
+     
         let listener = ParseSyncListener { syncType in
             if syncType == .From {
                 dispatch_sync(dispatch_get_main_queue()) {
@@ -77,7 +75,7 @@ class ItemsViewController: NSViewController {
         super.viewWillDisappear()
         uiQueue.cancelAllOperations()
         dataQueue.cancelAllOperations()
-        table.itemSums = [:]
+        table.dataProvider?.resetItemSums()
     }
     
 }
@@ -101,8 +99,8 @@ class ItemSumOperation: NSOperation {
             return
         }
         
-        if controller.table.itemSums[item.id!] == nil {
-            controller.table.itemSums[item.id!] = ItemSvc().getSum(item, filters: filters)
+        if controller.table.dataProvider?.getItemSum(item.id!) == nil {
+            controller.table.dataProvider?.setItemSum(item.id!, ItemSvc().getSum(item, filters: filters))
         }
         else {
             return

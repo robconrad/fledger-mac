@@ -8,7 +8,7 @@
 
 
 
-enum ItemsTableCellEnum: Int {
+enum ItemTableCellEnum: Int {
     
     case id = 0
     case account = 1
@@ -32,7 +32,7 @@ enum ItemsTableCellEnum: Int {
         }
     }
     
-    static func fromColumnStoryboardId(columnId: String) -> ItemsTableCellEnum {
+    static func fromColumnStoryboardId(columnId: String) -> ItemTableCellEnum {
         switch columnId {
         case "idColumn": return .id
         case "accountColumn": return .account

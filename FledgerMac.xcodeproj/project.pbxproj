@@ -21,9 +21,10 @@
 		3E3919761B81638800F72EC5 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3919751B81638800F72EC5 /* OverviewViewController.swift */; };
 		3E3919781B816DCE00F72EC5 /* AppWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3919771B816DCE00F72EC5 /* AppWindowController.swift */; };
 		3EBA5B9E1BA6071E00BB5C5A /* ItemsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBA5B9D1BA6071E00BB5C5A /* ItemsTableView.swift */; };
-		3EBA5BA11BA6392E00BB5C5A /* ItemsTableCellEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBA5BA01BA6392E00BB5C5A /* ItemsTableCellEnum.swift */; };
+		3EBA5BA11BA6392E00BB5C5A /* ItemTableCellEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBA5BA01BA6392E00BB5C5A /* ItemTableCellEnum.swift */; };
 		3EBA5BAB1BA64CAC00BB5C5A /* AppMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBA5BAA1BA64CAC00BB5C5A /* AppMenuItem.swift */; };
 		3EBA5BAE1BA64CEE00BB5C5A /* LogoutMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBA5BAD1BA64CEE00BB5C5A /* LogoutMenuItem.swift */; };
+		3EBA5BB01BA87AE700BB5C5A /* ItemTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBA5BAF1BA87AE700BB5C5A /* ItemTableCellView.swift */; };
 		68D7A8E4F014BEFFE93D583C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B979BC744FE4FF097710913 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -70,9 +71,10 @@
 		3E3919751B81638800F72EC5 /* OverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		3E3919771B816DCE00F72EC5 /* AppWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppWindowController.swift; sourceTree = "<group>"; };
 		3EBA5B9D1BA6071E00BB5C5A /* ItemsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsTableView.swift; sourceTree = "<group>"; };
-		3EBA5BA01BA6392E00BB5C5A /* ItemsTableCellEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsTableCellEnum.swift; sourceTree = "<group>"; };
+		3EBA5BA01BA6392E00BB5C5A /* ItemTableCellEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableCellEnum.swift; sourceTree = "<group>"; };
 		3EBA5BAA1BA64CAC00BB5C5A /* AppMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMenuItem.swift; sourceTree = "<group>"; };
 		3EBA5BAD1BA64CEE00BB5C5A /* LogoutMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutMenuItem.swift; sourceTree = "<group>"; };
+		3EBA5BAF1BA87AE700BB5C5A /* ItemTableCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableCellView.swift; sourceTree = "<group>"; };
 		5B979BC744FE4FF097710913 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD81F8D804C2B17B642CF47 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -191,7 +193,8 @@
 			children = (
 				3E3919731B81637D00F72EC5 /* ItemsViewController.swift */,
 				3EBA5B9D1BA6071E00BB5C5A /* ItemsTableView.swift */,
-				3EBA5BA01BA6392E00BB5C5A /* ItemsTableCellEnum.swift */,
+				3EBA5BA01BA6392E00BB5C5A /* ItemTableCellEnum.swift */,
+				3EBA5BAF1BA87AE700BB5C5A /* ItemTableCellView.swift */,
 			);
 			name = item;
 			sourceTree = "<group>";
@@ -382,7 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EBA5BA11BA6392E00BB5C5A /* ItemsTableCellEnum.swift in Sources */,
+				3EBA5BA11BA6392E00BB5C5A /* ItemTableCellEnum.swift in Sources */,
 				3EBA5BAE1BA64CEE00BB5C5A /* LogoutMenuItem.swift in Sources */,
 				3E3919701B81630600F72EC5 /* MainTabViewController.swift in Sources */,
 				3E3919781B816DCE00F72EC5 /* AppWindowController.swift in Sources */,
@@ -391,6 +394,7 @@
 				3EBA5BAB1BA64CAC00BB5C5A /* AppMenuItem.swift in Sources */,
 				3E3919661B81608E00F72EC5 /* AppColors.swift in Sources */,
 				3E39195D1B81448F00F72EC5 /* LoginViewController.swift in Sources */,
+				3EBA5BB01BA87AE700BB5C5A /* ItemTableCellView.swift in Sources */,
 				3EBA5B9E1BA6071E00BB5C5A /* ItemsTableView.swift in Sources */,
 				3E39196E1B81616F00F72EC5 /* AppStyling.swift in Sources */,
 				3E39174D1B77F6F800F72EC5 /* AppDelegate.swift in Sources */,

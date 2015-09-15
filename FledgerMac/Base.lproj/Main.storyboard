@@ -484,7 +484,7 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView identifier="idCell" id="xI3-ul-4id">
+                                                        <tableCellView identifier="idCell" id="xI3-ul-4id" customClass="IdItemTableCellView" customModule="FledgerMac" customModuleProvider="target">
                                                             <rect key="frame" x="1" y="1" width="43" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
@@ -516,7 +516,7 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView identifier="accountCell" id="aD9-Az-R3O">
+                                                        <tableCellView identifier="accountCell" id="aD9-Az-R3O" customClass="AccountItemTableCellView" customModule="FledgerMac" customModuleProvider="target">
                                                             <rect key="frame" x="47" y="1" width="59" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
@@ -548,7 +548,7 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView identifier="dateCell" id="vUS-gi-nOm">
+                                                        <tableCellView identifier="dateCell" id="vUS-gi-nOm" customClass="DateItemTableCellView" customModule="FledgerMac" customModuleProvider="target">
                                                             <rect key="frame" x="109" y="1" width="102" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
@@ -580,7 +580,7 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView identifier="commentsCell" id="jKa-2Y-BY1">
+                                                        <tableCellView identifier="commentsCell" id="jKa-2Y-BY1" customClass="CommentsItemTableCellView" customModule="FledgerMac" customModuleProvider="target">
                                                             <rect key="frame" x="214" y="1" width="102" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
@@ -612,7 +612,7 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView identifier="typeCell" id="vHe-hb-C9X">
+                                                        <tableCellView identifier="typeCell" id="vHe-hb-C9X" customClass="TypeItemTableCellView" customModule="FledgerMac" customModuleProvider="target">
                                                             <rect key="frame" x="318" y="1" width="102" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
@@ -644,7 +644,7 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView identifier="debitCell" id="i9v-fp-Qnb">
+                                                        <tableCellView identifier="debitCell" id="i9v-fp-Qnb" customClass="DebitItemTableCellView" customModule="FledgerMac" customModuleProvider="target">
                                                             <rect key="frame" x="423" y="1" width="102" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
@@ -676,7 +676,7 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView identifier="creditCell" id="AO7-6D-zwa">
+                                                        <tableCellView identifier="creditCell" id="AO7-6D-zwa" customClass="CreditItemTableCellView" customModule="FledgerMac" customModuleProvider="target">
                                                             <rect key="frame" x="527" y="1" width="102" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
@@ -708,7 +708,7 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView identifier="subtotalCell" id="wXA-QC-NTs">
+                                                        <tableCellView identifier="subtotalCell" id="wXA-QC-NTs" customClass="SubtotalItemTableCellView" customModule="FledgerMac" customModuleProvider="target">
                                                             <rect key="frame" x="632" y="1" width="139" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>

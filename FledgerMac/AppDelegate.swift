@@ -23,7 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
    
         ServiceBootstrap.preRegister()
         
-        if (ParseSvc().isLoggedIn()) {
+        if (UserSvc().isLoggedIn()) {
             ServiceBootstrap.register()
             showMainTabView()
         }
@@ -59,7 +59,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @IBAction func logout(sender: AnyObject) {
-        ParseSvc().logout()
+        UserSvc().logout()
         showLoginView()
     }
     

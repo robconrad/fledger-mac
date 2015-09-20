@@ -13,7 +13,7 @@ import FledgerCommon
 class LogoutMenuItem: AppMenuItem {
     
     override func isValid() -> Bool {
-        return ParseSvc().isLoggedIn()
+        return UserSvc().isLoggedIn()
     }
     
 }

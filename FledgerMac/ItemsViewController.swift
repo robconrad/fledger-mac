@@ -42,6 +42,8 @@ class ItemsViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        UserSvc().syncAllFromRemote()
+        
         let filters = itemFilters ?? ItemSvc().getFiltersFromDefaults()
         filters.count = 30
         filters.offset = 0

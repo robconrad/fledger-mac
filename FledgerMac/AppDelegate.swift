@@ -18,7 +18,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         
-        window = NSApplication.sharedApplication().windows.first as? NSWindow
+        window = NSApplication.sharedApplication().windows.first!
         storyboard = NSStoryboard(name: "Main", bundle: nil)
    
         ServiceBootstrap.preRegister()

@@ -141,7 +141,7 @@ class AccountItemTableCellView: ItemTableCellView {
     
     override func applyEditToItem(item: Item) -> Item {
         if let accountId = account?.id {
-            return item.copy(accountId: accountId)
+            return item.copy(accountId)
         }
         else {
             return item
@@ -181,7 +181,7 @@ class DateItemTableCellView: ItemTableCellView {
 class CommentsItemTableCellView: ItemTableCellView {
     
     override func isEditValid() -> Bool {
-        return count(getStringValue()) > 0
+        return getStringValue().characters.count > 0
     }
     
     override func applyEditToItem(item: Item) -> Item {

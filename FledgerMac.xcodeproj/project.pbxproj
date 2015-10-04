@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25942DB00DE25A0EEA6C75E7 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B979BC744FE4FF097710913 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		3E39174D1B77F6F800F72EC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E39174C1B77F6F800F72EC5 /* AppDelegate.swift */; };
 		3E3917511B77F6F800F72EC5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E3917501B77F6F800F72EC5 /* Images.xcassets */; };
 		3E3917541B77F6F800F72EC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E3917521B77F6F800F72EC5 /* Main.storyboard */; };
 		3E3917601B77F6F900F72EC5 /* FledgerMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E39175F1B77F6F900F72EC5 /* FledgerMacTests.swift */; };
-		3E3917721B77F7D700F72EC5 /* FledgerCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3917691B77F76100F72EC5 /* FledgerCommon.framework */; };
-		3E3917731B77F7D700F72EC5 /* FledgerCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3917691B77F76100F72EC5 /* FledgerCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3E39195D1B81448F00F72EC5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E39195C1B81448F00F72EC5 /* LoginViewController.swift */; };
 		3E3919661B81608E00F72EC5 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3919651B81608E00F72EC5 /* AppColors.swift */; };
 		3E39196E1B81616F00F72EC5 /* AppStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E39196D1B81616F00F72EC5 /* AppStyling.swift */; };
@@ -25,6 +24,8 @@
 		3EBA5BAB1BA64CAC00BB5C5A /* AppMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBA5BAA1BA64CAC00BB5C5A /* AppMenuItem.swift */; };
 		3EBA5BAE1BA64CEE00BB5C5A /* LogoutMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBA5BAD1BA64CEE00BB5C5A /* LogoutMenuItem.swift */; };
 		3EBA5BB01BA87AE700BB5C5A /* ItemTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBA5BAF1BA87AE700BB5C5A /* ItemTableCellView.swift */; };
+		3EC32E511BC08D8800A8F6AA /* FledgerCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EC32E501BC08D8800A8F6AA /* FledgerCommon.framework */; settings = {ASSET_TAGS = (); }; };
+		3EC32E531BC08D9200A8F6AA /* FledgerCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3EC32E501BC08D8800A8F6AA /* FledgerCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +45,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3E3917731B77F7D700F72EC5 /* FledgerCommon.framework in Embed Frameworks */,
+				3EC32E531BC08D9200A8F6AA /* FledgerCommon.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,7 +61,6 @@
 		3E3917591B77F6F900F72EC5 /* FledgerMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FledgerMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E39175E1B77F6F900F72EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E39175F1B77F6F900F72EC5 /* FledgerMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FledgerMacTests.swift; sourceTree = "<group>"; };
-		3E3917691B77F76100F72EC5 /* FledgerCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FledgerCommon.framework; path = ../FledgerCommon/Build/Products/Debug/FledgerCommon.framework; sourceTree = "<group>"; };
 		3E39195C1B81448F00F72EC5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3E3919651B81608E00F72EC5 /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		3E39196D1B81616F00F72EC5 /* AppStyling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStyling.swift; sourceTree = "<group>"; };
@@ -73,7 +73,10 @@
 		3EBA5BAA1BA64CAC00BB5C5A /* AppMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMenuItem.swift; sourceTree = "<group>"; };
 		3EBA5BAD1BA64CEE00BB5C5A /* LogoutMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutMenuItem.swift; sourceTree = "<group>"; };
 		3EBA5BAF1BA87AE700BB5C5A /* ItemTableCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableCellView.swift; sourceTree = "<group>"; };
+		3EC32E501BC08D8800A8F6AA /* FledgerCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FledgerCommon.framework; path = ../FledgerCommon/Build/Products/Debug/FledgerCommon.framework; sourceTree = "<group>"; };
+		46C01B80E4D4E9BF31B5831B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5B979BC744FE4FF097710913 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6922135D47EF1ECA8ACFF9D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E3917721B77F7D700F72EC5 /* FledgerCommon.framework in Frameworks */,
+				3EC32E511BC08D8800A8F6AA /* FledgerCommon.framework in Frameworks */,
+				25942DB00DE25A0EEA6C75E7 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +99,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CD65D8B0A0CBFB30E3F702B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46C01B80E4D4E9BF31B5831B /* Pods.debug.xcconfig */,
+				A6922135D47EF1ECA8ACFF9D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2468E3D3F3CBEFEF8210332B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,11 +119,12 @@
 		3E39173E1B77F6F800F72EC5 = {
 			isa = PBXGroup;
 			children = (
-				3E3917691B77F76100F72EC5 /* FledgerCommon.framework */,
+				3EC32E501BC08D8800A8F6AA /* FledgerCommon.framework */,
 				3E3917491B77F6F800F72EC5 /* FledgerMac */,
 				3E39175C1B77F6F900F72EC5 /* FledgerMacTests */,
 				3E3917481B77F6F800F72EC5 /* Products */,
 				2468E3D3F3CBEFEF8210332B /* Frameworks */,
+				1CD65D8B0A0CBFB30E3F702B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -226,10 +240,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E3917631B77F6F900F72EC5 /* Build configuration list for PBXNativeTarget "FledgerMac" */;
 			buildPhases = (
+				C008861E977AC97FF01CF3EB /* Check Pods Manifest.lock */,
 				3E3917431B77F6F800F72EC5 /* Sources */,
 				3E3917441B77F6F800F72EC5 /* Frameworks */,
 				3E3917451B77F6F800F72EC5 /* Resources */,
 				3E3917741B77F7D700F72EC5 /* Embed Frameworks */,
+				2C056A048FCFD579FDD4D562 /* Embed Pods Frameworks */,
+				53E06E51E0B00264DF5107E6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +281,8 @@
 		3E39173F1B77F6F800F72EC5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Robert Conrad";
 				TargetAttributes = {
@@ -314,6 +333,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C056A048FCFD579FDD4D562 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53E06E51E0B00264DF5107E6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C008861E977AC97FF01CF3EB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3E3917431B77F6F800F72EC5 /* Sources */ = {
@@ -448,6 +515,7 @@
 		};
 		3E3917641B77F6F900F72EC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46C01B80E4D4E9BF31B5831B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
@@ -464,6 +532,7 @@
 		};
 		3E3917651B77F6F900F72EC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6922135D47EF1ECA8ACFF9D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
